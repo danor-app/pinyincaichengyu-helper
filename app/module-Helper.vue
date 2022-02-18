@@ -38,10 +38,15 @@
 	for(let i = 0; i < 4; i++) { rulesAll.value.push('l \n'); }
 
 	const test = (ruleRaw, py) => {
-		const [rule, ...params] = ruleRaw.toLowerCase().split(' ');
+		const [rule, ...params] = ruleRaw.trim().toLowerCase().split(' ');
+
+		const filter = filters[rule.replace(/!/, '')];
+
+		if(!filter || !params.length) { return true; }
+
 		const reverse = rule.startsWith('!');
 
-		const result = params.length ? filters[rule.replace(/!/, '')]?.(py, ...params) : true;
+		const result = params.length ? filter?.(py, ...params) : true;
 
 		return reverse ? !result : result;
 	};
