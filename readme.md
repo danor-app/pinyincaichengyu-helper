@@ -1,8 +1,9 @@
 # pinyincaichengyu-helper
 网页游戏[拼音小成语 https://pinyincaichengyu.com/](https://pinyincaichengyu.com/)的简易筛选拼音工具
 
-## 要求
-- Node.js 14.18.1以上版本
+## 构建要求
+该项目为使用`Vue 3.0`、`Vite`、`TailwindCSS`、`SASS`构建而成的静态网页，构建要求如下：
+- Node.js 14.18.1或以上版本
 
 ## 构建
 ````shell
