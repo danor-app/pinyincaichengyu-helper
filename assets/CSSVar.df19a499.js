@@ -1,0 +1,1 @@
+const l=function(s){const r=document.documentElement,n=Object.freeze({set(e,t,o=r){o.style.setProperty(`--${e}`,t)},get(e,t=r){return t.style.getPropertyValue(`--${e}`)},del(e,t=r){return t.style.removeProperty(`--${e}`)},setAll(e,t=r){for(const o in e)n.set(o,e[o],t)}});s.provide("CV",n)};export{l as install};

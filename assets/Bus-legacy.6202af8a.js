@@ -1,0 +1,1 @@
+System.register(["./vendor-legacy.287e72e2.js"],(function(e){"use strict";var t;return{setters:[function(e){t=e.f}],execute:function(){const n=e("B",t({}));e("install",(function(e){e.mixin({data:()=>({B:n})}),e.provide("B",n)}))}}}));

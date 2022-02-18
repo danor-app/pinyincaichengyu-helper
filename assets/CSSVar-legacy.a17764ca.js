@@ -1,0 +1,1 @@
+System.register([],(function(e){"use strict";return{execute:function(){e("install",(function(e){const t=document.documentElement,r=Object.freeze({set(e,r,n=t){n.style.setProperty(`--${e}`,r)},get:(e,r=t)=>r.style.getPropertyValue(`--${e}`),del:(e,r=t)=>r.style.removeProperty(`--${e}`),setAll(e,n=t){for(const t in e)r.set(t,e[t],n)}});e.provide("CV",r)}))}}}));
