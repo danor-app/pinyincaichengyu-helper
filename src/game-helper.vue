@@ -23,6 +23,13 @@
 
 	import pys from './lib/pinyin.js';
 
+	import './index.pcss';
+	import './index.sass';
+
+
+
+	document.title = '拼音猜成语助手';
+
 
 	const filters = {
 		l: (py, length) => py.length == length,
@@ -74,20 +81,20 @@
 
 <style lang="sass" scoped>
 module
-	height: 100vh
+	@apply block fixed top-4 bottom-4 left-4 right-4
 p-rule
-	@apply inblock w-1/2 h-1/3 border border-gray-900 relative
-
+	@apply inblock relative w-1/2 h-1/3 border border-[var(--cMain)]
+cMain
 	textarea
-		@apply h-full outline-0 resize-none p-1 bg-gray-800 border-gray-900 text-gray-100 text-lg
+		@apply h-full p-1 text-lg bg-transparent outline-0 resize-none
 
 	[full]
-		@apply w-full border-r border-dashed
+		@apply w-full
 	[rule]
-		@apply w-1/2 border-r border-dashed
+		@apply w-1/2 border-r border-[var(--cMain)] border-dashed
 	[result]
 		@apply w-1/2
 
 	p-corn
-		@apply text-gray-400 text-sm absolute top-1 right-3
+		@apply text-[var(--cMain)] text-sm absolute top-1 right-3
 </style>

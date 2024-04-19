@@ -1,8 +1,9 @@
 {
 	"recommendations": [
 		"dbaeumer.vscode-eslint",
-		"octref.vetur",
+		"csstools.postcss",
+		"syler.sass-indented",
 		"bradlc.vscode-tailwindcss",
-		"syler.sass-indented"
+		"vue.volar"
 	]
 }

@@ -1,13 +1,19 @@
 {
 	"compilerOptions": {
 		"module": "esnext",
-		"moduleResolution": "node",
+		"moduleResolution": "bundler",
 		"target": "esnext",
 		"experimentalDecorators": true,
 		"strict": true,
+		"allowJs": true,
+		"jsx": "preserve"
 	},
+	"include": [
+		"**/*.js",
+		"**/*.vue"
+	],
 	"exclude": [
 		"node_modules",
-		"dist",
-	],
+		"dist"
+	]
 }

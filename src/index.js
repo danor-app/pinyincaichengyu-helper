@@ -1,17 +1,17 @@
 import { createApp } from 'vue';
 
-import App from './index.vue';
+
+import App from './game-helper.vue';
+
 
 
 const app = createApp(App);
 app.provide('app', app);
 
 
-window.addEventListener('load', async () => {
-	(await import('./lib/plugin/Bus.js')).install(app);
-	(await import('./lib/plugin/Brop.js')).install(app);
-	(await import('./lib/plugin/CSSVar.js')).install(app);
-
-
+const init = async () => {
 	app.mount('#app');
-});
+};
+
+if(document.readyState == 'complete') { await init(); }
+else { window.addEventListener('load', init); }

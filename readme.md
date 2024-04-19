@@ -1,17 +1,21 @@
 # pinyincaichengyu-helper
-网页游戏[拼音小成语 https://pinyincaichengyu.com/](https://pinyincaichengyu.com/)的简易筛选拼音工具
+网页游戏`拼音猜成语`的简易拼音筛选工具
+
+## 游戏地址
+[https://idiom.limboy.me/](https://idiom.limboy.me/)  
+[https://pinyincaichengyu.com/](https://pinyincaichengyu.com/)
 
 ## 构建要求
-该项目为使用`Vue 3.0`、`Vite`、`TailwindCSS`、`SASS`构建而成的静态网页，构建要求如下：
-- Node.js 14.18.1或以上版本
+该项目为使用`Vue.js 3.x`、`Vite`、`Tailwind CSS`、`SASS`构建而成的单静态网页，构建要求如下：
+- `Node.js` 14.18.1 或以上版本
 
 ## 构建
 ````shell
-git clone git@github.com:zheung/pinyincaichengyu-helper.git
+git clone git@github.com:danor-game/pinyincaichengyu-helper.git
 cd pinyincaichengyu-helper
 npm i
-npm run 构建
-npx run 预览
+npm run build
+npx run preview
 ````
 
 ## 使用说明
